@@ -1,0 +1,118 @@
+.experiencia-jobs {
+  display: grid;
+  gap: 20px 0px;
+}
+.experiencia-jobs-item {
+  background-color: #f0f0f0;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 10px 75px;
+}
+.experiencia-jobs-item p,
+.experiencia-jobs-item-ano {
+  font-size: 0.875rem;
+  color: #525252;
+}
+.experiencia-jobs-item p {
+  max-width: 50ch;
+}
+.experiencia-jobs-item-ano {
+  position: absolute;
+  top: 2px;
+  left: -115px;
+  width: 55px;
+  text-align: right;
+}
+
+.experiencia-jobs-item-role {
+  font-weight: bold;
+  font-size: 1.125rem;
+  display: block;
+  place-self: start;
+}
+.experiencia-jobs-item ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+.experiencia-jobs-item li {
+  font-size: 0.875rem;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #141414;
+  border-radius: 4px;
+}
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+.experiencia-texto {
+  font-size: 1.5rem;
+  color: #525252;
+  strong {
+    color: black;
+  }
+  max-width: 40ch;
+  margin-top: 14px;
+}
+.job {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  place-self: start;
+  position: relative;
+}
+.job::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 4px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  left: -34px;
+}
+@media (max-width: 1000px) {
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .experiencia-jobs-item-ano {
+    text-align: left;
+    position: initial;
+  }
+}
+@media (max-width: 800px) {
+  .experiencia-jobs-item {
+    padding: 13px 20px;
+    gap: 10px 30px;
+  }
+  .job::before {
+    left: -24px;
+  }
+  .experiencia-jobs-item ul {
+    gap: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .experiencia-jobs-item-role {
+    font-size: 1rem;
+  }
+  .experiencia-jobs-item {
+    grid-template-columns: 1fr;
+  }
+  .experiencia-texto {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  .job {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .experiencia-jobs-item-ano {
+    text-align: right;
+  }
+}
