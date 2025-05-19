@@ -2,7 +2,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portifólio</title>
+  <title>Portfólio</title>
+  <meta name="description" content="Desenvolvedor Front End & UX/UI Designer">
   <link rel="stylesheet" href="portifolio.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -10,13 +11,13 @@
 <body>
   <header class="header">
     <img src="img/marca.svg" alt="Lobo">
-    <nav>
-      <ul class="header-menu">
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <menu class="header-menu">
+
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#contato">Contato</a></li>
+
+    </menu>
   </header>
   <main class="introducao">
     <img src="img/perfil.jpg" alt="Lobo Cinza">
@@ -138,7 +139,7 @@
     </section>
   </div>
   <div class="darkerbg">
-    <section class="contato container" aria-label="Contato" id="contato">
+    <footer class="contato container" aria-label="Contato" id="contato">
       <p class="contato-texto">
         Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋
       </p>
@@ -147,9 +148,7 @@
         <li>+55 21 9999-9999</li>
         <li>@origamid.cursos</li>
       </ul>
-    </section>
-    <footer>
-      <p>Lobo. Alguns direitos reservados.</p>
+      <p class="footer-copy">Lobo. Alguns direitos reservados.</p>
     </footer>
   </div>
 </body>

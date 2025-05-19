@@ -22,14 +22,11 @@
   }
   margin: 0px auto;
 }
-footer {
+.footer-copy {
   color: #8f8f8f;
   font-size: 0.875rem;
-  display: block;
-  max-width: 1200px;
-  margin: 0px auto;
-  align-items: center;
-  padding: 80px 20px;
+
+  padding-top: 80px;
 }
 @media (max-width: 1000px) {
   .contato-texto {
