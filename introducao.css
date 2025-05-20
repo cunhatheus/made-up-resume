@@ -27,6 +27,9 @@
   font-size: 1.5rem;
   color: #525252;
 }
+.vibes {
+  font-family: "Henny Penny";
+}
 @media (max-width: 1000px) {
   .introducao {
     gap: 90px;
