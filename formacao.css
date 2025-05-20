@@ -4,12 +4,12 @@
 }
 .formacao-texto {
   color: #a3a3a3;
-  strong {
-    color: #fff;
-  }
   font-size: 1.5rem;
   max-width: 40ch;
   margin-top: 20px;
+}
+.formacao-texto strong {
+  color: #fff;
 }
 .formacao-cursos {
   display: grid;
@@ -27,20 +27,21 @@
   gap: 10px;
   background-color: #090909;
   border: #000000 1px solid;
-  span,
-  p {
-    color: #a3a3a3;
-    font-size: 1.125rem;
-  }
-  span {
-    font-size: 0.875rem;
-  }
-  h4 {
-    color: #fff;
-    font-size: 1.125rem;
-    font-weight: bold;
-  }
   position: relative;
+}
+.formacao-cursos-item p {
+  color: #a3a3a3;
+  font-size: 1.125rem;
+}
+
+.formacao-cursos-item span {
+  font-size: 0.875rem;
+  color: #a3a3a3;
+}
+.formacao-cursos-item h4 {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 .formacao-cursos-item p {
   margin-top: auto;
@@ -154,23 +155,30 @@
   }
   .formacao-cursos-item {
     max-width: 140px;
-    h4,
-    p {
-      font-size: 1rem;
-    }
-    span {
-      font-size: 0.75rem;
-    }
   }
+  .formacao-cursos-item h4 {
+    font-size: 1rem;
+  }
+  .formacao-cursos-item p {
+    font-size: 1rem;
+  }
+  .formacao-cursos-item span {
+    font-size: 0.75rem;
+  }
+
   .formacao-cursos-item h4::before {
     height: 17px;
   }
-  .formacao-intensivos,
-  .formacao-idiomas {
-    p,
-    span,
-    li {
-      font-size: 1rem;
-    }
+  .formacao-intensivos li {
+    font-size: 1rem;
+  }
+  .formacao-intensivos span {
+    font-size: 1rem;
+  }
+  .formacao-idiomas span {
+    font-size: 1rem;
+  }
+  .formacao-idiomas li {
+    font-size: 1rem;
   }
 }
